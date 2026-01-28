@@ -1,11 +1,15 @@
+# Build & Dependencies
 HELP.md
 .gradle
+*.gradle.bak
+.gradletasknamecache
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
+target/
 
-### STS ###
+# IDE - STS
 .apt_generated
 .classpath
 .factorypath
@@ -17,24 +21,30 @@ bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-
-### VS Code ###
+# IDE - VS Code
 .vscode/
 
+# IDE - General
+*.swp
+*.swo
+*~
+
+# Languages
 ### Kotlin ###
 .kotlin
+
+# Environment & Secrets
+.env
+.env.local
+*.key
+*.p12
+
+# Runtime & Logs
+logs/
+*.log
+tmp/
+temp/
+
+# OS
+.DS_Store
+Thumbs.db
