@@ -4,6 +4,7 @@ HELP.md
 *.gradle.bak
 .gradletasknamecache
 build/
+/build/generated/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
